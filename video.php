@@ -78,7 +78,7 @@ $username = $data['username'];
 	<link href="style.css" rel="stylesheet" type="text/css" />
 	<title>Hypertube</title>
 	<style>
-				body {
+		body {
 		  font-family: Arial;
 		  background-color: rgb(66, 66, 68);
 		}

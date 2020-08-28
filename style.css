@@ -1,3 +1,4 @@
+
 .card
 {
 	margin: auto;
@@ -10,6 +11,7 @@
 	width: 75%;
 	background: none;
 }
+
 #searchForm
 {
 	position: relative;
@@ -23,14 +25,12 @@ input
 	display: block;
 	border: none;
 	background: transparent;
-/*    border-bottom: 1px solid #888888;*/
 }
 
 input:focus
 {
 	color: white;
 	outline: none;
-/*    border-bottom: 2px solid #9933CC;*/
 }
 button:focus
 {
@@ -56,10 +56,7 @@ button:focus
 	padding-left: 0px;
 	padding-right: 0px;
 }
-.card-body
-{
-	/*padding: 0rem;*/
-}
+
 .card-header
 {
 	width: 100%;
@@ -80,7 +77,6 @@ h5
 }
 .topnav {
   overflow: hidden;
-  background-color: rgb(66, 66, 68);
 }
 
 .topnav a {
@@ -152,8 +148,6 @@ input[type=text]:focus
 }
 body {
 	font-family: Arial;
-	/*background-color: rgb(66, 66, 68);*/
-	background-color: #333;
 }
 
 .topnav-centered a {
@@ -164,7 +158,6 @@ body {
   }
 .sidenav a, .dropdown-btn {
 	font-size: 20px;
-	color: #818181;
 	border: none;
 	background: none;
 	cursor: pointer;
@@ -173,7 +166,6 @@ body {
 }
 .dropdown-container {
 	display: none;
-	background-color: rgb(66, 66, 68);
 }
 
 .tip {
@@ -181,7 +173,6 @@ body {
 	height: 0px;
 	position: absolute;
 	background: transparent;
-	border: 10px solid #ccc;
 }
 .tip-left {
 	top: 10px;
@@ -217,4 +208,85 @@ select
 	width: -moz-available;
   text-align: center;
   text-align-last: center;
+}
+
+/* LOADING ICON */
+.row-centre{
+	display: flex;
+	justify-content: center;
+}
+
+/* https://loading.io/css/ */
+.lds-dual-ring {
+	display: inline-block;
+	width: 80px;
+	height: 80px;
+  }
+  .lds-dual-ring:after {
+	content: " ";
+	display: block;
+	width: 64px;
+	height: 64px;
+	margin: 8px;
+	border-radius: 50%;
+	border: 6px solid #fff;
+	border-color: #fff transparent #fff transparent;
+	animation: lds-dual-ring 1.2s linear infinite;
+  }
+  @keyframes lds-dual-ring {
+	0% {
+	  transform: rotate(0deg);
+	}
+	100% {
+	  transform: rotate(360deg);
+	}
+  }
+
+  .paginationjs .paginationjs-pages li {
+	background-color: #272727;
+	border: none;
+}
+
+.paginationjs .paginationjs-pages li>a {
+	background-color: #272727;
+	color: white;
+	border: none;
+	outline: none;
+	height: 30px;
+	line-height: 30px;
+}
+
+.paginationjs .paginationjs-pages li>a:hover {
+	background-color: #9933CC;
+	border: none;
+	outline: none;
+	line-height: 25px;
+}
+
+.paginationjs .paginationjs-pages li.active>a {
+	background-color: #9933CC;
+	color: white;
+	border: none;
+	outline: none;
+}
+
+.disabled {
+	color: #888888;
+	border: none;
+	outline: none;
+}
+
+.paginationjs .paginationjs-pages li:last-child {
+	border: none;
+}
+
+.disabled
+{
+	color: #888888;
+	border: none;		
+	outline: none;
+}
+
+.nav-tabs .nav-link.active, .nav-pills .nav-link.active {
+    background-color: #9933CC;
 }

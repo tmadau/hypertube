@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="342"
+   height="513"
+   viewBox="0 0 90.487498 135.73125"
+   version="1.1"
+   id="svg8"
+   sodipodi:docname="noImagePoster.svg">
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-161.26873)">
+    <rect
+       style="fill:#5d5d5d;fill-opacity:1;stroke-width:1.23137879"
+       id="rect41"
+       width="90.487503"
+       height="135.73125"
+       x="0"
+       y="161.26872" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.08429718px;line-height:1.25;font-family:'Yu Gothic';-inkscape-font-specification:'Yu Gothic';letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.25210744"
+       x="46.937805"
+       y="204.47298"
+       id="text25"
+       transform="scale(0.95284703,1.0494864)"><tspan
+         sodipodi:role="line"
+         id="tspan23"
+         x="46.622673"
+         y="204.47298"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:12.10115719px;line-height:1.5;font-family:'Microsoft Sans Serif';-inkscape-font-specification:'Microsoft Sans Serif Bold';text-align:center;letter-spacing:-0.63026857px;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke-width:0.25210744">IMAGE</tspan><tspan
+         sodipodi:role="line"
+         x="46.622673"
+         y="222.62471"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:12.10115719px;line-height:1.5;font-family:'Microsoft Sans Serif';-inkscape-font-specification:'Microsoft Sans Serif Bold';text-align:center;letter-spacing:-0.63026857px;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke-width:0.25210744"
+         id="tspan27">NOT</tspan><tspan
+         sodipodi:role="line"
+         x="46.622669"
+         y="240.77644"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:12.10115719px;line-height:1.5;font-family:'Microsoft Sans Serif';-inkscape-font-specification:'Microsoft Sans Serif Bold';text-align:center;letter-spacing:-0.63026857px;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke-width:0.25210744"
+         id="tspan29">AVALIABLE</tspan></text>
+  </g>
+</svg>

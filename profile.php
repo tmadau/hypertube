@@ -65,11 +65,7 @@ $pp = $data['picture'];
 		href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" 
 		integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" 
 		crossorigin="anonymous">
-	<link 
-		href="https://stackpath.bootstrapcdn.com/bootswatch/4.2.1/cyborg/bootstrap.min.css" 
-		rel="stylesheet" 
-		integrity="sha384-e4EhcNyUDF/kj6ZoPkLnURgmd8KW1B4z9GHYKb7eTG3w3uN8di6EBsN2wrEYr8Gc" 
-		crossorigin="anonymous">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/cyborg/bootstrap.min.css" integrity="sha384-nEnU7Ae+3lD52AK+RGNzgieBWMnEfgTbRHIwEvp1XXPdqdO6uLTd/NwXbzboqjc2" crossorigin="anonymous">
 		<link href="style.css" rel="stylesheet" type="text/css" />
 	<style type="text/css">
 		/* AESTHETIC */
@@ -128,7 +124,7 @@ $pp = $data['picture'];
 		</div>
 		<center>
 		<div class="topnav-centered">
-			<a href="/Hypertube/home.php"><img src="logo.png" alt="logo" height="70%" width="70%"></a>
+			<a href="/Hypertube/home.php"><img src="./images/logo.svg" alt="logo" height="70%" width="70%"></a>
 		</div>
 		</center>
 </div>

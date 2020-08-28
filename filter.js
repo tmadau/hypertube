@@ -3,7 +3,7 @@ function filterFunction(movieArray, filterType)
 	console.log("\n\n filter\n\n")
 	if (filterType != "None")
 	{
-		if (filterType == "Year")
+		if (filterType === "Year")
 		{
 			let to = $("#filterFormYearSelectorTo").children("option:selected").val();
 			let from = $("#filterFormYearSelectorFrom").children("option:selected").val();

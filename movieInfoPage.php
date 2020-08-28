@@ -66,56 +66,15 @@ error_reporting(E_ALL);
 		href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" 
 		integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" 
 		crossorigin="anonymous">
-	<link 
-		href="https://stackpath.bootstrapcdn.com/bootswatch/4.2.1/cyborg/bootstrap.min.css" 
-		rel="stylesheet" 
-		integrity="sha384-e4EhcNyUDF/kj6ZoPkLnURgmd8KW1B4z9GHYKb7eTG3w3uN8di6EBsN2wrEYr8Gc" 
-		crossorigin="anonymous">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/cyborg/bootstrap.min.css" integrity="sha384-nEnU7Ae+3lD52AK+RGNzgieBWMnEfgTbRHIwEvp1XXPdqdO6uLTd/NwXbzboqjc2" crossorigin="anonymous">
+		
 		<link href="style.css" rel="stylesheet" type="text/css" />
 	<style type="text/css">
 		/* AESTHETIC */
 	</style>
-	<style type="text/css">
-		.vl
-		{
-			width: 1px;
-			background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgb(139, 139, 139) 50%, rgba(0, 0, 0, 0) 100%);
-		}
-		.credit_table
-		{
-			width: 100%;
-			overflow-x: scroll;
-		}
-		.cell_name
-		{
-			height: 45px;
-			padding-bottom: 10px;
-		}
-		.cell_image
-		{
-			height: 90px;
-		}
-		.cell_role
-		{
-			height: 60px;
-			font-size: smaller;
-		}
-		td:nth-child(even) 
-		{
-			background: #222222;
-		}
-		td:nth-child(odd)
-		{
-			background: #282828;
-		}
-		td
-		{
-			padding:0.25%;
-		}
-	</style>
 </head>
 <body>
-	<div id="google_translate_element"></div>
+	
 <div class="topnav" id="myTopnav">
 		<a class="navbar-brand" href="#">
     		<img src="<?php echo $picturep?>" alt="profile picture" style="width:40px;">
@@ -129,7 +88,7 @@ error_reporting(E_ALL);
     	</div>
 		<center>
 		<div class="topnav-centered">
-			<a href="/Hypertube/home.php"><img src="logo.png" alt="logo" height="70%" width="70%"></a>
+			<a href="/Hypertube/home.php"><img src="./images/logo.svg" alt="logo" height="70%" width="70%"></a>
 		</div>
 		</center>
 </div>
@@ -144,6 +103,7 @@ error_reporting(E_ALL);
     </div>
 
     <script type="text/javascript" src="/Hypertube/NODE/public/js/download.js"></script>
+	<div id="google_translate_element"></div>
 </body>
 </html>
 <script src="showMoviehelpers.js"></script>
@@ -151,7 +111,7 @@ error_reporting(E_ALL);
 
 	var val = "<?php echo $_GET['id'] ?>";
 	var date = "<?php echo $_GET['date'] ?>";
-	console.log(val);
+
 	if (val)
 	{
 		
@@ -188,13 +148,71 @@ error_reporting(E_ALL);
 				yearRelease = 'N/A';
 
 			// check if there is a movie poster avaliable
-			var srcImage;
-			if (!(result.poster_path === null) || !(result.poster_path === undefined))
-				srcImage = "https://image.tmdb.org/t/p/w342" + result.poster_path;
-			else if (!(result.Poster === 'N/A' || result.Poster === undefined))
-				srcImage = result.Poster;
+			var srcImagePath;
+			if (result.poster_path !== null && result.poster_path !== undefined)
+				srcImagePath = "https://image.tmdb.org/t/p/w342" + result.poster_path;
+			else if (result.Poster !== 'N/A' && result.Poster !== undefined)
+				srcImagePath = result.Poster;
 			else 
-				srcImage = "http://i67.tinypic.com/10fc1lg.jpg";
+				srcImagePath = "";
+
+		var srcImage;
+		if (srcImagePath != "")
+			srcImage = `<img src="${srcImagePath}" style="width:100%;"/>`;
+		else 
+			srcImage = `<div><svg
+							xmlns:dc="http://purl.org/dc/elements/1.1/"
+							xmlns:cc="http://creativecommons.org/ns#"
+							xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+							xmlns:svg="http://www.w3.org/2000/svg"
+							xmlns="http://www.w3.org/2000/svg"
+							xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+							xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+							width="342"
+							height="513"
+							viewBox="0 0 90.487498 135.73125"
+							version="1.1"
+							id="svg8"
+							sodipodi:docname="noImagePoster.svg">
+							<g
+								inkscape:label="Layer 1"
+								inkscape:groupmode="layer"
+								id="layer1"
+								transform="translate(0,-161.26873)">
+								<rect
+								style="fill:#5d5d5d;fill-opacity:1;stroke-width:1.23137879"
+								id="rect41"
+								width="90.487503"
+								height="135.73125"
+								x="0"
+								y="161.26872" />
+								<text
+								xml:space="preserve"
+								style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.08429718px;line-height:1.25;font-family:'Yu Gothic';-inkscape-font-specification:'Yu Gothic';letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.25210744"
+								x="46.937805"
+								y="204.47298"
+								id="text25"
+								transform="scale(0.95284703,1.0494864)"><tspan
+									sodipodi:role="line"
+									id="tspan23"
+									x="46.622673"
+									y="204.47298"
+									style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:12.10115719px;line-height:1.5;font-family:'Microsoft Sans Serif';-inkscape-font-specification:'Microsoft Sans Serif Bold';text-align:center;letter-spacing:-0.63026857px;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke-width:0.25210744">IMAGE</tspan><tspan
+									sodipodi:role="line"
+									x="46.622673"
+									y="222.62471"
+									style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:12.10115719px;line-height:1.5;font-family:'Microsoft Sans Serif';-inkscape-font-specification:'Microsoft Sans Serif Bold';text-align:center;letter-spacing:-0.63026857px;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke-width:0.25210744"
+									id="tspan27">NOT</tspan><tspan
+									sodipodi:role="line"
+									x="46.622669"
+									y="240.77644"
+									style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:12.10115719px;line-height:1.5;font-family:'Microsoft Sans Serif';-inkscape-font-specification:'Microsoft Sans Serif Bold';text-align:center;letter-spacing:-0.63026857px;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke-width:0.25210744"
+									id="tspan29">AVALIABLE</tspan></text>
+							</g>
+							</svg>
+							</div>
+							`;
+
 
 			var originalTitle;
 			if (result.title != result.original_title)
@@ -203,9 +221,7 @@ error_reporting(E_ALL);
 				originalTitle = ""
 
 			var genreList;
-		//	genreList = stringifyGenre(result.genres);
 
-			// http://i63.tinypic.com/2hp39tg.png
 			var cast = fillTable(result.cast, "cast");
 		//	console.log(cast);
 			var crew = fillTable(result.crew, "crew");
@@ -219,57 +235,67 @@ error_reporting(E_ALL);
 					// this is creating a div with the content inside of it
 					content =
 					`<div class="card-header">
-						<h4 id="movieName" class="card-title">`+ result.Title+ `</h4>
-						`+ originalTitle +`
-						<p class="text-muted">(`+ result.Year +`)</p>
+						<h4 id="movieName" class="card-title">${result.Title}</h4>
+						${originalTitle}
+						<p class="text-muted">( ${result.Year} )</p>
 					</div>
 					<div class="card-body">	
 						<div class="container-fluid">
 							<div class="row">
 								<div class="col-sm-4 gallery-pad">
-									<img src="` + srcImage + `" style="width:100%;"/>
+									${srcImage}
 									<div class="row IMDb" style="padding: 5px;">
 										<div class="col-sm gallery-pad">
-											<p><i class="fas fa-star"></i> `+ rating +`</p>
+											<p><i class="fas fa-star"></i> ${rating} </p>
 										</div>
 										<div class="vl"></div>
 										<div class="col-sm gallery-pad">
-											<a href="`+ result.imdbURL +`">Go to IMDb Page</a>
+											<a href="${result.imdbURL}">Go to IMDb Page</a>
 										</div>
 									</div>
 								</div>
 								<div class="col-sm-8 gallery-pad">
-									<p><b>Genre:</b> `+genres+`</p>
+									<p><b>Genre: </b>${genres}</p>
 									<br>
-									<p><b>Plot:</b> `+ result.Plot +`</p>
+									<p><b>Plot: </b>${result.Plot}</p>
 									<br>
 									 <center>
 		<div class="col">
 		<div id="target">
 		</div>
 			<button class="btn"><i class="fa fa-download"></i> Download</button> 
-			<button id='importantStream' class="btn" onclick="downloadQuery('`+result.Title+` `+result.Year+`'); isWatched();"><i class="fa fa-tv"></i> Stream</button>
+			<button id='importantStream' class="btn" onclick="downloadQuery('${result.Title + " " + result.Year}'); isWatched();"><i class="fa fa-tv"></i> Stream</button>
 		</div>
 	</center>
 								</div>
 
 							</div>
-							<div class="row">
-								<div class="credit_table">
-									<p><b>Cast:</b><p>
-										<table>
-											<tr>`+ cast +`</tr>
-										</table>
+							<br/>
+							<div class="row" style"flex-wrap: nowrap; flex-direction: row; overflow-x: scroll;>
+								<ul class="nav nav-tabs" style="width: 100%;">
+									<li class="nav-item">
+										<a class="nav-link active" data-toggle="tab" href="#cast">Cast</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" data-toggle="tab" href="#crew">Crew</a>
+									</li>
+								</ul>
+								<div id="myTabContent" class="tab-content" style="flex-wrap: nowrap; flex-direction: row; overflow-x: scroll;">
+									<div class="tab-pane fade active show" id="cast">
+										<div class="container-fluid" >
+											<div class="row" style="flex-wrap: nowrap;">
+											${cast}
+											</div>
+										</div>									
+									</div>
+									<div class="tab-pane fade" id="crew">
+									<div class="container-fluid">
+											<div class="row" style="flex-wrap: nowrap;">
+											${crew}
+											</div>
+										</div>	
+									</div>
 								</div>
-								<div class="credit_table">
-									<p><b>Crew:<b><p>
-									<table>
-										<tr>`+ crew +`</tr>
-									</table>
-								</div>
-							</div>
-							<div class="row">
-
 							</div>
 						</div>
 					</div>`;
@@ -282,16 +308,9 @@ error_reporting(E_ALL);
 			});
 
 	
-		});
-/*
-			
+		});		
 						
-			});
-
-			
-		});
-		*/
-	}
+	}		
 
 	function stringifyGenre(result)
 	{
@@ -314,15 +333,30 @@ error_reporting(E_ALL);
 			if (!(result[i].profile_path === null))
 				srcImage = "https://image.tmdb.org/t/p/w90_and_h90_face/" + result[i].profile_path; // w342 //https://image.tmdb.org/t/p/w90_and_h90_face/kU3B75TyRiCgE270EyZnHjfivoq.jpg
 			else
-				srcImage = "http://i63.tinypic.com/2hp39tg.png"
+				srcImage = "./images/noImageProfile.svg"
 			
 			if (type == "cast")
 				role = result[i].character;
 			if (type == "crew")
 				role = result[i].job;  // ""+ result[i].job +" ("+ result[i].department +")";
 			 
-			content += 
-			"<td><table><tr><div class='cell_name'><b>"+ result[i].name +"</b></div></tr><tr><div class='cell_image'><img src='"+ srcImage +"'/></div></tr><tr><div class='cell_role'><p>"+ role +"</p></div></tr></table></td>";
+			content += `
+				<div style="padding: 4px;">
+					<div class="card border-secondary mb-3" style="width: 10rem;height: 15rem; font-size: 0.75rem;">
+						<div class="card-header" style="font-size: 0.75rem;">
+							<strong>${result[i].name}</strong>							
+							<br/>
+							(${role})
+						</div>
+						<div class="card-body">
+							<img src='${srcImage}'/>
+						</div>
+					</div>
+				</div>
+			`
+
+			
+			//`<td><table><tr><div class='cell_name'><b>${result[i].name}</b></div></tr><tr><div class='cell_image'><img src='${srcImage}'/></div></tr><tr><div class='cell_role'><p>${role}</p></div></tr></table></td>`;
 		}
 
 		return content; 
