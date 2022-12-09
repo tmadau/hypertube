@@ -19,7 +19,7 @@
     "download": "^7.1.0",
     "ejs": "^2.6.1",
     "events": "^3.0.0",
-    "express": "^4.16.4",
+    "express": "^4.17.3",
     "extratorrent-api": "^1.1.4",
     "find": "^0.2.9",
     "growing-file": "^0.1.3",
